@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Michoacana Natural Fruit | Helados Artesanales Mexicanos en California</title>
+  <meta name="description" content="Helados artesanales mexicanos, paletas y frutas frescas en California. Visítanos o descubre nuestras oportunidades de franquicia.">
+  <meta name="keywords" content="La Michoacana, helados mexicanos, paletas, frutas, franquicia, California, ice cream, Mexican food">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://lamichoacanacalifornia.com/">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="La Michoacana Natural Fruit | Helados Mexicanos">
+  <meta property="og:description" content="Helados, paletas y frutas frescas artesanales. ¡Visítanos en California!">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  
+  <style>
+    :root {
+      --primary: #E91E63;
+      --secondary: #FF9800;
+      --accent: #4CAF50;
+      --bg: #FFF8E1;
+      --text: #2D2D2D;
+      --white: #FFFFFF;
+      --light-pink: #FCE4EC;
+      --light-orange: #FFF3E0;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    
+    h1, h2, h3 {
+      font-family: 'Fredoka One', cursive;
+    }
+    
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 16px 24px;
+      background: rgba(255, 248, 225, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 3px solid var(--primary);
+      transition: all 0.3s;
+    }
+    
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.5rem;
+    }
+    
+    .logo-text {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.25rem;
+      color: var(--primary);
+      line-height: 1.2;
+    }
+    
+    .logo-text span {
+      display: block;
+      font-size: 0.7rem;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+      color: var(--secondary);
+    }
+    
+    nav {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    
+    nav a:hover {
+      color: var(--primary);
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-size: 1rem;
+    }
+    
+    .btn:hover {
+      background: #C2185B;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3);
+    }
+    
+    .btn-secondary {
+      background: var(--secondary);
+    }
+    
+    .btn-secondary:hover {
+      background: #F57C00;
+      box-shadow: 0 8px 25px rgba(255, 152, 0, 0.3);
+    }
+    
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--primary);
+      cursor: pointer;
+    }
+    
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 24px 80px;
+      background: linear-gradient(135deg, var(--light-pink) 0%, var(--light-orange) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(233, 30, 99, 0.1) 0%, transparent 50%);
+      animation: pulse 10s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+    
+    .hero-badge {
+      display: inline-block;
+      background: var(--white);
+      color: var(--primary);
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.875rem;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      color: var(--primary);
+      margin-bottom: 16px;
+      line-height: 1.1;
+    }
+    
+    .hero h1 span {
+      color: var(--secondary);
+    }
+    
+    .hero p {
+      font-size: 1.25rem;
+      color: var(--text);
+      margin-bottom: 32px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .hero-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .hero-features {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      margin-top: 48px;
+      flex-wrap: wrap;
+    }
+    
+    .hero-feature {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    
+    .hero-feature i {
+      color: var(--accent);
+    }
+    
+    /* Sections */
+    section {
+      padding: 80px 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+    
+    .section-title {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+    
+    .section-subtitle {
+      font-size: 1.125rem;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    /* Products */
+    .products {
+      background: var(--white);
+      border-radius: 32px;
+      padding: 80px 40px;
+      margin: 40px auto;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    }
+    
+    .category-tabs {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    
+    .category-tab {
+      padding: 12px 24px;
+      background: var(--bg);
+      border: 2px solid transparent;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .category-tab:hover,
+    .category-tab.active {
+      border-color: var(--primary);
+      background: var(--white);
+      color: var(--primary);
+    }
+    
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    
+    .product-card {
+      background: var(--bg);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.3s;
+      border: 2px solid transparent;
+    }
+    
+    .product-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--primary);
+      box-shadow: 0 15px 40px rgba(233, 30, 99, 0.15);
+    }
+    
+    .product-image {
+      height: 180px;
+      background: linear-gradient(135deg, var(--light-pink), var(--light-orange));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+    }
+    
+    .product-info {
+      padding: 20px;
+    }
+    
+    .product-name {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.25rem;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    
+    .product-desc {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 12px;
+    }
+    
+    .product-price {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    
+    /* Franchise */
+    .franchise {
+      background: linear-gradient(135deg, var(--primary), #9C27B0);
+      color: white;
+      border-radius: 32px;
+      padding: 80px 40px;
+      margin: 40px auto;
+    }
+    
+    .franchise .section-label {
+      color: rgba(255,255,255,0.8);
+    }
+    
+    .franchise .section-title {
+      color: white;
+    }
+    
+    .franchise .section-subtitle {
+      color: rgba(255,255,255,0.9);
+    }
+    
+    .franchise-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+    
+    .franchise-card {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 32px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    .franchise-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .franchise-card ul {
+      list-style: none;
+    }
+    
+    .franchise-card li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    
+    .franchise-card li:last-child {
+      border-bottom: none;
+    }
+    
+    .franchise-card li i {
+      color: var(--secondary);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    
+    .investment-box {
+      background: rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 32px;
+      text-align: center;
+      margin-top: 48px;
+    }
+    
+    .investment-amount {
+      font-size: 3rem;
+      font-family: 'Fredoka One', cursive;
+      margin-bottom: 8px;
+    }
+    
+    .investment-label {
+      font-size: 1rem;
+      opacity: 0.9;
+      margin-bottom: 24px;
+    }
+    
+    .franchise .btn {
+      background: var(--white);
+      color: var(--primary);
+    }
+    
+    .franchise .btn:hover {
+      background: var(--secondary);
+      color: white;
+    }
+    
+    /* Location */
+    .location {
+      background: var(--white);
+      border-radius: 32px;
+      padding: 80px 40px;
+      margin: 40px auto;
+      text-align: center;
+    }
+    
+    .location-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+    
+    .location-card {
+      background: var(--bg);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: left;
+    }
+    
+    .location-card h4 {
+      font-family: 'Fredoka One', cursive;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    
+    .location-card p {
+      color: #666;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    
+    .location-card p i {
+      color: var(--primary);
+    }
+    
+    /* Contact */
+    .contact {
+      background: linear-gradient(135deg, var(--light-pink), var(--light-orange));
+      border-radius: 32px;
+      padding: 80px 40px;
+      margin: 40px auto;
+    }
+    
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    
+    .contact-info h3 {
+      font-size: 1.75rem;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+    
+    .contact-info p {
+      color: #666;
+      margin-bottom: 24px;
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+    
+    .contact-item i {
+      color: var(--primary);
+      width: 24px;
+      height: 24px;
+    }
+    
+    .contact-form {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+    
+    .form-group label span {
+      color: var(--primary);
+    }
+    
+    .form-input {
+      width: 100%;
+      padding: 14px 16px;
+      border: 2px solid #E0E0E0;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.2s;
+    }
+    
+    .form-input:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+    
+    textarea.form-input {
+      resize: vertical;
+      min-height: 120px;
+    }
+    
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 32px;
+    }
+    
+    .form-success i {
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    
+    .form-success h4 {
+      font-family: 'Fredoka One', cursive;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--text);
+      color: white;
+      padding: 48px 24px;
+      text-align: center;
+    }
+    
+    .footer-logo {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+    }
+    
+    footer p {
+      opacity: 0.8;
+      font-size: 0.9rem;
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 24px;
+    }
+    
+    .social-links a {
+      width: 44px;
+      height: 44px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: all 0.3s;
+    }
+    
+    .social-links a:hover {
+      background: var(--primary);
+      transform: translateY(-3px);
+    }
+    
+    /* Mobile */
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--bg);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        z-index: 150;
+      }
+      
+      nav.open {
+        display: flex;
+      }
+      
+      nav a {
+        font-size: 1.25rem;
+      }
+      
+      .mobile-menu-btn {
+        display: flex;
+        z-index: 200;
+      }
+      
+      .hero {
+        padding: 100px 20px 60px;
+      }
+      
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .hero p {
+        font-size: 1rem;
+      }
+      
+      .hero-btns {
+        flex-direction: column;
+      }
+      
+      .hero-btns .btn {
+        width: 100%;
+        justify-content: center;
+      }
+      
+      section {
+        padding: 60px 20px;
+      }
+      
+      .products,
+      .franchise,
+      .contact {
+        padding: 60px 20px;
+        border-radius: 20px;
+      }
+      
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .franchise-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .section-title {
+        font-size: 1.75rem;
+      }
+    }
+    
+    /* Animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+    
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <div class="logo-icon">🍦</div>
+        <div class="logo-text">
+          La Michoacana
+          <span>Natural Fruit</span>
+        </div>
+      </div>
+      <nav id="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#franquicia">Franquicia</a>
+        <a href="#ubicaciones">Ubicaciones</a>
+        <a href="#contacto" class="btn">Contacto</a>
+      </nav>
+      <button class="mobile-menu-btn" id="menuBtn">
+        <i data-lucide="menu" style="width: 28px; height: 28px;"></i>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <div class="hero-badge">🇲🇽 Auténticos Sabores Mexicanos</div>
+      <h1>La Michoacana <span>Natural Fruit</span></h1>
+      <p>Helados artesanales, paletas de frutas naturales y los antojos mexicanos más deliciosos. ¡Todo hecho con amor y los mejores ingredientes!</p>
+      <div class="hero-btns">
+        <a href="#productos" class="btn">
+          <i data-lucide="ice-cream-cone" style="width: 20px; height: 20px;"></i>
+          Ver Productos
+        </a>
+        <a href="#franquicia" class="btn btn-secondary">
+          <i data-lucide="briefcase" style="width: 20px; height: 20px;"></i>
+          Ser Franquiciado
+        </a>
+      </div>
+      <div class="hero-features">
+        <div class="hero-feature">
+          <i data-lucide="check-circle" style="width: 20px; height: 20px;"></i>
+          Ingredientes 100% Naturales
+        </div>
+        <div class="hero-feature">
+          <i data-lucide="check-circle" style="width: 20px; height: 20px;"></i>
+          Recetas Tradicionales
+        </div>
+        <div class="hero-feature">
+          <i data-lucide="check-circle" style="width: 20px; height: 20px;"></i>
+          Hecho en California
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="productos" class="products">
+    <div class="section-header">
+      <div class="section-label">
+        <i data-lucide="ice-cream-cone" style="width: 16px; height: 16px;"></i>
+        Menú
+      </div>
+      <h2 class="section-title">Nuestros Productos</h2>
+      <p class="section-subtitle">Descubre nuestra amplia variedad de helados artesanales, paletas de frutas naturales y antojos mexicanos.</p>
+    </div>
+    
+    <div class="category-tabs">
+      <button class="category-tab active" data-category="all">Todos</button>
+      <button class="category-tab" data-category="helados">Helados</button>
+      <button class="category-tab" data-category="paletas">Paletas</button>
+      <button class="category-tab" data-category="antojos">Antojos</button>
+      <button class="category-tab" data-category="bebidas">Bebidas</button>
+    </div>
+    
+    <div class="products-grid">
+      <!-- Helados -->
+      <div class="product-card reveal" data-category="helados">
+        <div class="product-image">🍦</div>
+        <div class="product-info">
+          <h3 class="product-name">Single Scoop</h3>
+          <p class="product-desc">Una bola de helado artesanal de tu sabor favorito</p>
+          <div class="product-price">$5.50</div>
+        </div>
+      </div>
+      
+      <div class="product-card reveal" data-category="helados">
+        <div class="product-image">🍨</div>
+        <div class="product-info">
+          <h3 class="product-name">Double Scoop</h3>
+          <p class="product-desc">Dos bolas de helado con sabores combinados</p>
+          <div class="product-price">$8.00</div>
+        </div>
+      </div>
+      
+      <div class="product-card reveal" data-category="helados">
+        <div class="product-image">🍧</div>
+        <div class="product-info">
+          <h3 class="product-name">Triple Scoop</h3>
+          <p class="product-desc">Tres bolas para los más antojados</p>
+          <div class="product-price">$9.50</div>
+        </div>
+      </div>
+      
+      <div class="product-card reveal" data-category="helados">
+        <div class="product-image">🍌</div>
+        <div class="product-info">
+          <h3 class="product-name">Banana Split</h3>
+          <p class="product-desc">Plátano con tres bolas, crema y toppings</p>
+          <div class="product-price">$12.00</div>
+        </div>
+      </div>
+      
+      <div class="product-card reveal" data-category="helados">
+        <div class="product-image">🍨</div>
+        <div class="product-info">
+          <h3 class="product-name">Sundae</h3>
+          <p class="product-desc">Helado con salsa, crema y nueces</p>
+          <div class="product-price">$11.00</div>
+        </div>
+      </div>
+      
+      <!-- Paletas -->
+      <div class="product-card reveal" data-category="paletas">
+        <div class="product-image">🍧</div>
+        <div class="product-info">
+          <h3 class="product-name">Paleta de Agua</h3>
+          <p class="product-desc">Mango, fresa, coco, limón y más</p>
+          <div class="product-price">$4.50</div>
+        </div>
+      </div>
+      
+      <div class="product-card reveal" data-category="paletas">
+        <div class="product-image">🧊</div>
+        <div class="product-info">
+          <h3 class="product-name">Paleta de Crema</h3>
+          <p class="product-desc">Cremosa y deliciosa, sabor coco, nuez y más</p>
+          <div class="product-price">$4.99</div>
+        </div>
+      </div>
+      
+      <div class="product-card reveal" data-category="paletas">
+        <div class="product-image">🍫</div>
+        <div class="product-info">
+          <h3 class="product-name">Esquimal</h3>
+          <p class="product-desc">Paleta bañada en chocolate crujiente</p>
+          <div class="product-price">$5.99</div>
+        </div>
+      </div>
+      
+      <div class="product-card reveal" data-category="paletas">
+        <div class="product-image">🥭</div>
+        <div class="product-info">
+          <h3 class="product-name">Mangonada</h3>
+          <p class="product-desc">Paleta de mango con chamoy y tajín</p>
+          <div class="product-price">$10.00</div>
+        </div>
+      </div>
+      
+      <!-- Antojos -->
+      <div class="product-card reveal" data-category="antojos">
+        <div class="product-image">🍓</div>
+        <div class="product-info">
+          <h3 class="product-name">Fresas con Crema</h3>
+          <p class="product-desc">Fresas frescas con crema y granola</p>
+          <div class="product-price">$12.00</div>
+        </div>
+      </div>
+      
+      <div class="product-card reveal" data-category="antojos">
+        <div class="product-image">🍇</div>
+        <div class="product-info">
+          <h3 class="product-name">Biónico</h3>
+          <p class="product-desc">Mix de frutas frescas con crema y granola</p>
+          <div class="product-price">$13.00</div>
+        </div>
+      </div>
+      
+      <div class="product-card reveal" data-category="antojos">
+        <div class="product-image">🌽</div>
+        <div class="product-info">
+          <h3 class="product-name">Esquite</h3>
+          <p class="product-desc">Elote cocido con mayonesa, queso y chile</p>
+          <div class="product-price">$8.00</div>
+        </div>
+      </div>
+      
+      <div class="product-card reveal" data-category="antojos">
+        <div class="product-image">🥨</div>
+        <div class="product-info">
+          <h3 class="product-name">Tostilocos</h3>
+          <p class="product-desc">Tostitos con jícama, pepino, tueros y chamoy</p>
+          <div class="product-price">$11.00</div>
+        </div>
+      </div>
+      
+      <div class="product-card reveal" data-category="antojos">
+        <div class="product-image">🍉</div>
+        <div class="product-info">
+          <h3 class="product-name">Sandía Loca</h3>
+          <p class="product-desc">Mitad de sandía con frutas y toppings</p>
+          <div class="product-price">$14.00</div>
+        </div>
+      </div>
+      
+      <!-- Bebidas -->
+      <div class="product-card reveal" data-category="bebidas">
+        <div class="product-image">🍹</div>
+        <div class="product-info">
+          <h3 class="product-name">Agua Fresca</h3>
+          <p class="product-desc">Jamaica, horchata o tamarindo</p>
+          <div class="product-price">$6.00</div>
+        </div>
+      </div>
+      
+      <div class="product-card reveal" data-category="bebidas">
+        <div class="product-image">🥤</div>
+        <div class="product-info">
+          <h3 class="product-name">Licuado</h3>
+          <p class="product-desc">Fresa, mango, banana o combinado</p>
+          <div class="product-price">$9.50</div>
+        </div>
+      </div>
+      
+      <div class="product-card reveal" data-category="bebidas">
+        <div class="product-image">🥛</div>
+        <div class="product-info">
+          <h3 class="product-name">Malteada</h3>
+          <p class="product-desc">Chocolate, vainilla o fresa</p>
+          <div class="product-price">$9.00</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="franquicia" class="franchise">
+    <div class="section-header">
+      <div class="section-label">
+        <i data-lucide="briefcase" style="width: 16px; height: 16px;"></i>
+        Oportunidad de Negocio
+      </div>
+      <h2 class="section-title">Franquicia La Michoacana</h2>
+      <p class="section-subtitle">Únete a la familia y abre tu propia tienda con una de las marcas más queridas de la comunidad hispana.</p>
+    </div>
+    
+    <div class="franchise-grid">
+      <div class="franchise-card">
+        <h3>
+          <i data-lucide="trophy" style="width: 24px; height: 24px;"></i>
+          Beneficios
+        </h3>
+        <ul>
+          <li>
+            <i data-lucide="check" style="width: 18px; height: 18px;"></i>
+            Marca reconocida con más de 30 años de experiencia
+          </li>
+          <li>
+            <i data-lucide="check" style="width: 18px; height: 18px;"></i>
+            Productos únicos y auténticos mexicanos
+          </li>
+          <li>
+            <i data-lucide="check" style="width: 18px; height: 18px;"></i>
+            Múltiples fuentes de ingreso
+          </li>
+          <li>
+            <i data-lucide="check" style="width: 18px; height: 18px;"></i>
+            Capacitación completa incluida
+          </li>
+          <li>
+            <i data-lucide="check" style="width: 18px; height: 18px;"></i>
+            Sin regalías ni porcentaje de ventas
+          </li>
+        </ul>
+      </div>
+      
+      <div class="franchise-card">
+        <h3>
+          <i data-lucide="trending-up" style="width: 24px; height: 24px;"></i>
+          Potencial de Ganancias
+        </h3>
+        <ul>
+          <li>
+            <i data-lucide="check" style="width: 18px; height: 18px;"></i>
+            Margen bruto en productos: 60-70%
+          </li>
+          <li>
+            <i data-lucide="check" style="width: 18px; height: 18px;"></i>
+            Punto de equilibrio: 12-18 meses
+          </li>
+          <li>
+            <i data-lucide="check" style="width: 18px; height: 18px;"></i>
+            Ingreso anual: $200K - $500K+ USD
+          </li>
+          <li>
+            <i data-lucide="check" style="width: 18px; height: 18px;"></i>
+            Mercado en crecimiento constante
+          </li>
+          <li>
+            <i data-lucide="check" style="width: 18px; height: 18px;"></i>
+            Demanda alta en comunidades hispanas
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="investment-box">
+      <div class="investment-amount">$50K - $150K</div>
+      <div class="investment-label">Inversión Inicial Estimada</div>
+      <a href="#contacto" class="btn">
+        <i data-lucide="message-square" style="width: 20px; height: 20px;"></i>
+        Solicitar Información
+      </a>
+    </div>
+  </section>
+
+  <section id="ubicaciones" class="location">
+    <div class="section-header">
+      <div class="section-label">
+        <i data-lucide="map-pin" style="width: 16px; height: 16px;"></i>
+        Encuéntranos
+      </div>
+      <h2 class="section-title">Nuestras Ubicaciones</h2>
+      <p class="section-subtitle">Visítanos en cualquiera de nuestras sucursales en California.</p>
+    </div>
+    
+    <div class="location-cards">
+      <div class="location-card">
+        <h4>📍 Carson, CA</h4>
+        <p><i data-lucide="map-pin" style="width: 16px; height: 16px;"></i> 17928 S Avalon Blvd, Carson, CA 90746</p>
+        <p><i data-lucide="clock" style="width: 16px; height: 16px;"></i> Lun - Dom: 10AM - 10PM</p>
+        <p><i data-lucide="phone" style="width: 16px        style="width: 16px; height: 16px;"></i> (310) 555-0123</p>
+      </div>
+      
+      <div class="location-card">
+        <h4>📍 Pico Rivera, CA</h4>
+        <p><i data-lucide="map-pin" style="width: 16px; height: 16px;"></i> 9150 Whittier Blvd, Pico Rivera, CA 90660</p>
+        <p><i data-lucide="clock" style="width: 16px; height: 16px;"></i> Lun - Dom: 10AM - 10PM</p>
+        <p><i data-lucide="phone" style="width: 16px; height: 16px;"></i> (562) 555-0456</p>
+      </div>
+      
+      <div class="location-card">
+        <h4>📍 Norwalk, CA</h4>
+        <p><i data-lucide="map-pin" style="width: 16px; height: 16px;"></i> 12345 Norwalk Blvd, Norwalk, CA 90650</p>
+        <p><i data-lucide="clock" style="width: 16px; height: 16px;"></i> Lun - Dom: 10AM - 10PM</p>
+        <p><i data-lucide="phone" style="width: 16px; height: 16px;"></i> (562) 555-0789</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <div class="section-header">
+      <div class="section-label">
+        <i data-lucide="mail" style="width: 16px; height: 16px;"></i>
+        Contacto
+      </div>
+      <h2 class="section-title">¿Interesado en la Franquicia?</h2>
+      <p class="section-subtitle">Déjanos tus datos y te contactaremos para resolver todas tus dudas.</p>
+    </div>
+    
+    <div class="contact-grid">
+      <div class="contact-form">
+        <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-group">
+            <label>Nombre completo <span>*</span></label>
+            <input type="text" class="form-input" name="nombre" placeholder="Tu nombre completo" required>
+          </div>
+          <div class="form-group">
+            <label>Email <span>*</span></label>
+            <input type="email" class="form-input" name="email" placeholder="tu@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>Teléfono</label>
+            <input type="tel" class="form-input" name="telefono" placeholder="(555) 123-4567">
+          </div>
+          <div class="form-group">
+            <label>Ciudad donde te interesa abrir</label>
+            <input type="text" class="form-input" name="ciudad" placeholder="Ej: Los Angeles, CA">
+          </div>
+          <div class="form-group">
+            <label>Mensaje <span>*</span></label>
+            <textarea class="form-input" name="mensaje" placeholder="Cuéntanos tu interés en la franquicia, experiencia previa en negocios, preguntas..." required></textarea>
+          </div>
+          <button type="submit" class="btn" style="width: 100%; justify-content: center;">
+            <i data-lucide="send" style="width: 20px; height: 20px;"></i>
+            Enviar Mensaje
+          </button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <i data-lucide="check-circle" style="width: 64px; height: 64px;"></i>
+          <h4>¡Mensaje Enviado!</h4>
+          <p>Gracias por tu interés. Te contactaremos pronto.</p>
+        </div>
+      </div>
+      
+      <div class="contact-info">
+        <h3>¿Tienes dudas?</h3>
+        <p>Estamos aquí para ayudarte. Contáctanos por el canal que prefieras.</p>
+        
+        <div class="contact-item">
+          <i data-lucide="mail"></i>
+          <span>info@lamichoacanacalifornia.com</span>
+        </div>
+        <div class="contact-item">
+          <i data-lucide="phone"></i>
+          <span>(310) 555-0123</span>
+        </div>
+        <div class="contact-item">
+          <i data-lucide="instagram"></i>
+          <span>@lamichoacananaturalfruit</span>
+        </div>
+        <div class="contact-item">
+          <i data-lucide="clock"></i>
+          <span>Lun - Dom: 10AM - 10PM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">La Michoacana Natural Fruit</div>
+    <p>&copy; 2024 La Michoacana Natural Fruit. Todos los derechos reservados.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/lamichoacananaturalfruit/" target="_blank" aria-label="Instagram">
+        <i data-lucide="instagram" style="width: 20px; height: 20px;"></i>
+      </a>
+      <a href="#" aria-label="Facebook">
+        <i data-lucide="facebook" style="width: 20px; height: 20px;"></i>
+      </a>
+      <a href="#" aria-label="TikTok">
+        <i data-lucide="music" style="width: 20px; height: 20px;"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize icons
+    lucide.createIcons();
+    
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('nav');
+    
+    menuBtn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      const icon = menuBtn.querySelector('i');
+      if (nav.classList.contains('open')) {
+        icon.setAttribute('data-lucide', 'x');
+      } else {
+        icon.setAttribute('data-lucide', 'menu');
+      }
+      lucide.createIcons();
+    });
+    
+    nav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        nav.classList.remove('open');
+        menuBtn.querySelector('i').setAttribute('data-lucide', 'menu');
+        lucide.createIcons();
+      });
+    });
+    
+    // Category tabs
+    const tabs = document.querySelectorAll('.category-tab');
+    const products = document.querySelectorAll('.product-card');
+    
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        
+        const category = tab.dataset.category;
+        
+        products.forEach(product => {
+          if (category === 'all' || product.dataset.category === category) {
+            product.style.display = 'block';
+          } else {
+            product.style.display = 'none';
+          }
+        });
+      });
+    });
+    
+    // Scroll reveal
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, index * 100);
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    revealElements.forEach(el => revealObserver.observe(el));
+    
+    // Form submission
+    const form = document.getElementById('contactForm');
+    const formSuccess = document.getElementById('formSuccess');
+    
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const formData = new FormData(form);
+      const submitBtn = form.querySelector('button[type="submit"]');
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i data-lucide="loader-2" style="width: 20px; height: 20px; animation: spin 1s linear infinite;"></i> Enviando...';
+      lucide.createIcons();
+      
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(response => {
+        form.style.display = 'none';
+        formSuccess.style.display = 'block';
+      })
+      .catch(error => {
+        form.style.display = 'none';
+        formSuccess.style.display = 'block';
+      });
+    });
+    
+    // Add spin animation
+    const style = document.createElement('style');
+    style.textContent = '@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }';
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>
